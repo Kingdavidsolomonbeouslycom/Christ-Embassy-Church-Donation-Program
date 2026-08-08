@@ -29,28 +29,36 @@ CEM 2026 CHURCH DONATION PROGRAM
               ┌───────────────┐
               │ ADMIN PANEL   │
               │               │
-              │ Donations     │
-              │ Donors        │
-              │ Settings      │
-              │ Accounts      │
-              └───────────────┘
-              DONATION SETTINGS
+              │ ADMIN DASHBOARD
 
+Welcome, Administrator
+
+──────────────────────────────
+Total Donations       $25,480
+Pending Donations         18
+Confirmed Donations       74
+──────────────────────────────
+
+Recent Donations
+
+John Doe       $500       Confirmed
+Mary Smith     $250       Pending
+David Brown    $1,000     Confirmed│
 USD
-Account name: __________
-Account number: _________
-Bank: __________________
+Account name: SOLOMON DAVID TEMITOPE
+Account number: 0212340861
+Bank: GTB BANK
 
 NGN
-Account name: __________
-Account number: _________
-Bank: __________________
+Account name: SOLOMON DAVID TEMITOPE 
+Account number: 8106964021
+Bank: OPAY
 
 BITCOIN
-Wallet address: _________
+Wallet address: XXXXXXX
 
 USDT
-Network: _______________
-Wallet address: _________
+Network: TRC2
+Wallet address: XXXXX
 
 [ SAVE CHANGES ]
