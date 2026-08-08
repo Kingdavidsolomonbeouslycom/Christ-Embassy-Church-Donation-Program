@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Building Project</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div>
+            <strong>Building Project</strong>
+            <span>Administrator Dashboard</span>
+        </div>
+
+        <button id="logoutButton">
+            Logout
+        </button>
+
+    </header>
+
+
+    <main class="dashboard">
+
+        <section class="welcome">
+
+            <div>
+                <p class="eyebrow">ADMINISTRATION</p>
+                <h1>Dashboard</h1>
+                <p id="adminName">
+                    Loading administrator...
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>Total Donations</span>
+                <strong id="totalDonations">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Pending</span>
+                <strong id="pendingDonations">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Confirmed</span>
+                <strong id="confirmedDonations">0</strong>
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">DONATION METHODS</p>
+                    <h2>Authorized Payment Information</h2>
+                </div>
+
+                <button id="saveMethodsButton">
+                    Save Changes
+                </button>
+            </div>
+
+
+            <p class="notice">
+                Only enter official, authorized donation information.
+                Never enter private keys, wallet seed phrases, or
+                passwords here.
+            </p>
+
+
+            <div id="methodsContainer">
+                Loading donation methods...
+            </div>
+
+            <p id="saveMessage"></p>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">DONATION RECORDS</p>
+                    <h2>Recent Donations</h2>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Donor</th>
+                            <th>Amount</th>
+                            <th>Method</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="donationsTable">
+                        <tr>
+                            <td colspan="5">
+                                Loading donations...
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
