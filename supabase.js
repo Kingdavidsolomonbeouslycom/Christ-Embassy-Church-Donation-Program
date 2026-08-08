@@ -1,0 +1,7 @@
+const SUPABASE_URL = "PASTE-YOUR-PROJECT-URL-HERE";
+const SUPABASE_ANON_KEY = "PASTE-YOUR-PUBLISHABLE-OR-ANON-KEY-HERE";
+
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_ANON_KEY
+);
